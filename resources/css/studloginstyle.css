@@ -1,0 +1,109 @@
+
+/* style.css */
+body {
+    background: linear-gradient(to right, #ff4d4d, #ffffff);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+input[type="text"], input[type="password"], select {
+    border-radius: 10px;
+    border: 1px solid #ff4d4d;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+/* Responsive Design */
+
+/* Large Screens */
+@media (min-width: 1200px) {
+    .card {
+        max-width: 900px;
+        padding: 30px;
+    }
+
+    input[type="text"], input[type="password"], select {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    button {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .card {
+        max-width: 800px;
+        padding: 25px;
+    }
+
+    input[type="text"], input[type="password"], select {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 767px) {
+    .card {
+        max-width: 90%;
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    input[type="text"], input[type="password"], select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .me-md-4 {
+        margin: 0 !important;
+    }
+
+    img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+}

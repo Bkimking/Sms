@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class StudentGuardian extends Model
+{
+    protected $fillable = [
+        'student_id', 'guardianfullname', 'guardianemail', 'guardianoccupation', 'guardianidnumber',
+        'guardianhomeaddress', 'guardiancounty', 'guardiantel',
+    ];
+
+    public function student()
+    {
+        return $this->belongsTo(Student::class);
+    }
+}
+
